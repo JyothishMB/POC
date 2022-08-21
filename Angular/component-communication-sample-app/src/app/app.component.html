@@ -1,0 +1,9 @@
+<app-cockpit
+(serverCreated)="onServerAdded($event)"
+(blueprintCreated)="onBlueprintAdded($event)"></app-cockpit>
+<div class="list-group">
+    <app-server 
+        *ngFor="let serverelement of serverElements"
+        [svrElement]="serverelement">
+    </app-server>
+</div>
