@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace LSP.Classes
+namespace LSP.Problem.Problem1
 {
-    public class Shape
+    public class Apple
     {
-        public Shape()
+        public virtual string GetColor()
         {
-            
+            return "Red";
         }
     }
 }
