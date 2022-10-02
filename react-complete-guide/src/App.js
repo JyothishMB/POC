@@ -9,24 +9,37 @@ function App() {
       id: 1,
       title: 'Parker Pen',
       amount: 30,
-      date: new Date(2023, 4, 29)
+      date: new Date(2022, 4, 29)
     },
     {
-      id: 1,
+      id: 2,
       title: 'Swis Knife',
       amount: 400,
-      date: new Date(2023, 3, 21)
+      date: new Date(2022, 3, 21)
     },
     {
-      id: 1,
+      id: 3,
       title: 'Trecking Pants',
       amount: 500,
-      date: new Date(2023, 2, 16)
+      date: new Date(2022, 2, 16)
+    },
+    {
+      id: 4,
+      title: 'Camping Kit',
+      amount: 500,
+      date: new Date(2021, 2, 16)
     }
-  ]
+  ];
+
+  const addExpenseHandler = expense => {
+    console.log('In App.js');
+    console.log(expense);
+  };
+
+
   return (
     <div>
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHandler}/>
       <Expenses expenses={expenseslist}/>
     </div>
   );
