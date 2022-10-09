@@ -1,1 +1,11 @@
-<p>recipe-item works!</p>
+<a class="list-group-item" href="#">
+    <div class="row">
+        <div class="col-md-6">
+            <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
+            <p class="list-group-item-text">{{ recipe.description }}</p>
+        </div>
+        <div class="col-md-6">
+            <img [src]="recipe.imagePath" [alt]="recipe.name" class="img-fluid">
+        </div>
+    </div>
+</a>
