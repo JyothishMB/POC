@@ -3,13 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace AuthDemo.Contexts.Auth.Models
+namespace AuthDemo.Authentication
 {
     public static class UserRoles
     {
+        public const string User = "User";
         public const string Admin = "Admin";
-        public const string Customer = "Customer";
-        public const string SupportEngineer = "SupportEngineer";
-
     }
 }

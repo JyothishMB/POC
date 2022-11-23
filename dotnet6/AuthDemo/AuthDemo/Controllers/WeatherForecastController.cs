@@ -1,7 +1,10 @@
+using AuthDemo.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AuthDemo.Controllers;
 
+[Authorize(Roles = UserRoles.Admin)]
 [ApiController]
 [Route("[controller]")]
 public class WeatherForecastController : ControllerBase
